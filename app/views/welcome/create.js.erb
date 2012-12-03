@@ -1,0 +1,8 @@
+$('#colorbox').empty();
+
+<% @stack.data.each do |color| %>
+  var div = $('<div>');
+  div.css('background', '<%=j color %>');
+  div.addClass('box');
+  $('#colorbox').prepend(div);
+<% end %>

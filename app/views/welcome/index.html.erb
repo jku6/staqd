@@ -1,0 +1,10 @@
+<%= form_tag '/', :remote => true do %>
+
+  <%= text_field_tag 'color' %>
+  <%= submit_tag 'push' %>
+  <%= submit_tag 'pop' %>
+
+<% end %>
+
+<div id='colorbox'></div>
+
